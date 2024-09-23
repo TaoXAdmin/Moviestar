@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Liste de films</title>
+    <style> 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: black;	   
+            color: white;
+            margin: 0;
+	    margin-bottom: 10px;
+            padding: 0;
+		
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .movie {
+            margin: 20px 0;
+			margin-bottom: 120px;
+            text-align: center;
+			font-size:24px;
+        }
+        .movie-title {
+            font-size: 20px;
+            font-weight: bold;
+			margin-bottom: 10px;
+        }
+		.movie img {
+			max-width: 100%;
+			max-height: 500px; /* Taille maximale, ajustée automatiquement */
+			object-fit: contain; /* Maintient les proportions sans couper l'image */
+			background-color: black; /* Ajoute un fond noir pour remplir l'espace vide */
+			padding: 10px; /* Ajoute une marge autour de l'image */
+			border-radius: 10px;
+		}
+        @media (min-width: 768px) {
+	    .div{
+		    font-size: 24px;
+	    }
+            .movie-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <!-- Film 1 -->
+    <div class="movie">
+        <div class="movie-title">Retour vers le futur (1985)</div>
+        <div>Michael J. Fox</div>
+        <img src="faux-lien-vers-l-affiche-retour-vers-le-futur.jpg" alt="Affiche Retour vers le futur">
+    </div>
+    <!-- Film 2 -->
+    <div class="movie">
+        <div class="movie-title">Le Seigneur des Anneaux : La Communauté de l'Anneau (2001)</div>
+        <div>Elijah Wood</div>
+        <img src="faux-lien-vers-l-affiche-2.jpg" alt="Affiche Le Seigneur des Anneaux">
+    </div>
+    <!-- Film 3 -->
+    <div class="movie">
+        <div class="movie-title">Inception (2010)</div>
+        <div>Leonardo DiCaprio</div>
+        <img src="faux-lien-vers-l-affiche-3.jpg" alt="Affiche Inception">
+    </div>
+    <!-- Film 4 -->
+    <div class="movie">
+        <div class="movie-title">Matrix (1999)</div>
+        <div>Keanu Reeves</div>
+        <img src="faux-lien-vers-l-affiche-4.jpg" alt="Affiche Matrix">
+    </div>
+    <!-- Film 5 -->
+    <div class="movie">
+        <div class="movie-title">Jurassic Park (1993)</div>
+        <div>Sam Neill</div>
+        <img src="faux-lien-vers-l-affiche-5.jpg" alt="Affiche Jurassic Park">
+    </div>
+    <!-- Film 6 -->
+    <div class="movie">
+        <div class="movie-title">Titanic (1997)</div>
+        <div>Leonardo DiCaprio</div>
+        <img src="faux-lien-vers-l-affiche-6.jpg" alt="Affiche Titanic">
+    </div>
+    <!-- Film 7 -->
+    <div class="movie">
+        <div class="movie-title">Star Wars: Un nouvel espoir (1977)</div>
+        <div>Mark Hamill</div>
+        <img src="faux-lien-vers-l-affiche-7.jpg" alt="Affiche Star Wars">
+    </div>
+    <!-- Film 8 -->
+    <div class="movie">
+        <div class="movie-title">Gladiator (2000)</div>
+        <div>Russell Crowe</div>
+        <img src="faux-lien-vers-l-affiche-8.jpg" alt="Affiche Gladiator">
+    </div>
+    <!-- Film 9 -->
+    <div class="movie">
+        <div class="movie-title">Le Roi Lion (1994)</div>
+        <div>Matthew Broderick</div>
+        <img src="faux-lien-vers-l-affiche-9.jpg" alt="Affiche Le Roi Lion">
+    </div>
+    <!-- Film 10 -->
+    <div class="movie">
+        <div class="movie-title">Forrest Gump (1994)</div>
+        <div>Tom Hanks</div>
+        <img src="faux-lien-vers-l-affiche-10.jpg" alt="Affiche Forrest Gump">
+    </div>
+    <!-- Film 11 -->
+    <div class="movie">
+        <div class="movie-title">Le Parrain (1972)</div>
+        <div>Marlon Brando</div>
+        <img src="faux-lien-vers-l-affiche-11.jpg" alt="Affiche Le Parrain">
+    </div>
+    <!-- Film 12 -->
+    <div class="movie">
+        <div class="movie-title">The Dark Knight (2008)</div>
+        <div>Christian Bale</div>
+        <img src="faux-lien-vers-l-affiche-12.jpg" alt="Affiche The Dark Knight">
+    </div>
+    <!-- Film 20 -->
+    
+    <!-- Film 13 -->
+    <div class="movie">
+        <div class="movie-title">Pulp Fiction (1994)</div>
+        <div>John Travolta</div>
+        <img src="faux-lien-vers-l-affiche-13.jpg" alt="Affiche Pulp Fiction">
+    </div>
+    <!-- Film 14 -->
+    <div class="movie">
+        <div class="movie-title">Avatar (2009)</div>
+        <div>Sam Worthington</div>
+        <img src="faux-lien-vers-l-affiche-14.jpg" alt="Affiche Avatar">
+    </div>
+    <!-- Film 15 -->
+    <div class="movie">
+        <div class="movie-title">Fight Club (1999)</div>
+        <div>Brad Pitt</div>
+        <img src="faux-lien-vers-l-affiche-15.jpg" alt="Affiche Fight Club">
+    </div>
+    <!-- Film 16 -->
+    <div class="movie">
+        <div class="movie-title">Interstellar (2014)</div>
+        <div>Matthew McConaughey</div>
+        <img src="faux-lien-vers-l-affiche-16.jpg" alt="Affiche Interstellar">
+    </div>
+    <!-- Film 17 -->
+    <div class="movie">
+        <div class="movie-title">Les Évadés (1994)</div>
+        <div>Tim Robbins</div>
+        <img src="faux-lien-vers-l-affiche-17.jpg" alt="Affiche Les Évadés">
+    </div>
+    <!-- Film 18 -->
+    <div class="movie">
+        <div class="movie-title">Le Cinquième Élément (1997)</div>
+        <div>Bruce Willis</div>
+        <img src="faux-lien-vers-l-affiche-18.jpg" alt="Affiche Le Cinquième Élément">
+    </div>
+    <!-- Film 19 -->
+    <div class="movie">
+        <div class="movie-title">Alien (1979)</div>
+        <div>Sigourney Weaver</div>
+        <img src="faux-lien-vers-l-affiche-19.jpg" alt="Affiche Alien">
+    </div>
+    <!-- Film 21 -->
+    <div class="movie">
+        <div class="movie-title">Les Dents de la mer (1975)</div>
+        <div>Roy Scheider</div>
+        <img src="faux-lien-vers-l-affiche-21.jpg" alt="Affiche Les Dents de la mer">
+    </div>
+    <!-- Film 22 -->
+    <div class="movie">
+        <div class="movie-title">Avengers: Endgame (2019)</div>
+        <div>Robert Downey Jr.</div>
+        <img src="faux-lien-vers-l-affiche-22.jpg" alt="Affiche Avengers: Endgame">
+    </div>
+    <!-- Film 23 -->
+    <div class="movie">
+        <div class="movie-title">Indiana Jones et la dernière croisade (1989)</div>
+        <div>Harrison Ford</div>
+        <img src="faux-lien-vers-l-affiche-23.jpg" alt="Affiche Indiana Jones">
+    </div>
+    <!-- Film 24 -->
+    <div class="movie">
+        <div class="movie-title">La La Land (2016)</div>
+        <div>Ryan Gosling</div>
+        <img src="faux-lien-vers-l-affiche-24.jpg" alt="Affiche La La Land">
+    </div>
+    <!-- Film 25 -->
+    <div class="movie">
+        <div class="movie-title">Les Gardiens de la Galaxie (2014)</div>
+        <div>Chris Pratt</div>
+        <img src="faux-lien-vers-l-affiche-25.jpg" alt="Affiche Les Gardiens de la Galaxie">
+    </div>
+    <!-- Film 26 -->
+    <div class="movie">
+        <div class="movie-title">Toy Story (1995)</div>
+        <div>Tom Hanks </div>
+        <img src="faux-lien-vers-l-affiche-26.jpg" alt="Affiche Toy Story">
+    </div>
+    <!-- Film 27 -->
+    <div class="movie">
+        <div class="movie-title">Rocky (1976)</div>
+        <div>Sylvester Stallone</div>
+        <img src="faux-lien-vers-l-affiche-27.jpg" alt="Affiche Rocky">
+    </div>
+    <!-- Film 28 -->
+    <div class="movie">
+        <div class="movie-title">Blade Runner (1982)</div>
+        <div>Harrison Ford</div>
+        <img src="faux-lien-vers-l-affiche-28.jpg" alt="Affiche Blade Runner">
+    </div>
+    <!-- Film 29 -->
+    <div class="movie">
+        <div class="movie-title">Shutter Island (2010)</div>
+        <div>Leonardo DiCaprio</div>
+        <img src="faux-lien-vers-l-affiche-29.jpg" alt="Affiche Shutter Island">
+    </div>
+    <!-- Film 30 -->
+    <div class="movie">
+        <div class="movie-title">Le Fabuleux Destin d'Amélie Poulain (2001)</div>
+        <div>Audrey Tautou</div>
+        <img src="faux-lien-vers-l-affiche-30.jpg" alt="Affiche Amélie Poulain">
+    </div>
+	<!-- Film 31 -->
+    <div class="movie">
+        <div class="movie-title">La Haine (1995)</div>
+        <div>Vincent Cassel</div>
+        <img src="faux-lien-vers-l-affiche-31.jpg" alt="Affiche La Haine">
+    </div>
+    <!-- Film 32 -->
+    <div class="movie">
+        <div class="movie-title">Les Incorruptibles (1987)</div>
+        <div>Kevin Costner</div>
+        <img src="faux-lien-vers-l-affiche-32.jpg" alt="Affiche Les Incorruptibles">
+    </div>
+    <!-- Film 33 -->
+    <div class="movie">
+        <div class="movie-title">The Social Network (2010)</div>
+        <div>Jesse Eisenberg</div>
+        <img src="faux-lien-vers-l-affiche-33.jpg" alt="Affiche The Social Network">
+    </div>
+    <!-- Film 34 -->
+    <div class="movie">
+        <div class="movie-title">Black Panther (2018)</div>
+        <div>Chadwick Boseman</div>
+        <img src="faux-lien-vers-l-affiche-34.jpg" alt="Affiche Black Panther">
+    </div>
+    <!-- Film 35 -->
+    <div class="movie">
+        <div class="movie-title">Le Pianiste (2002)</div>
+        <div>Adrien Brody</div>
+        <img src="faux-lien-vers-l-affiche-35.jpg" alt="Affiche Le Pianiste">
+    </div>
+    <!-- Film 36 -->
+    <div class="movie">
+        <div class="movie-title">Mission impossible (1996)</div>
+        <div>Tom Cruise</div>
+        <img src="faux-lien-vers-l-affiche-36.jpg" alt="Affiche Mission Impossible>
+    </div>
+    <!-- Film 37 -->
+    <div class="movie">
+        <div class="movie-title">Les Indestructibles (2004)</div>
+        <div>Craig T. Nelson</div>
+        <img src="faux-lien-vers-l-affiche-37.jpg" alt="Affiche Les Indestructibles">
+    </div>
+    <!-- Film 38 -->
+    <div class="movie">
+        <div class="movie-title">Coco (2017)</div>
+        <div>Anthony Gonzalez</div>
+        <img src="faux-lien-vers-l-affiche-38.jpg" alt="Affiche Coco">
+    </div>
+    <!-- Film 39 -->
+    <div class="movie">
+        <div class="movie-title">Deadpool (2016)</div>
+        <div>Ryan Reynolds</div>
+        <img src="faux-lien-vers-l-affiche-39.jpg" alt="Affiche Deadpool">
+    </div>
+    <!-- Film 40 -->
+    <div class="movie">
+        <div class="movie-title">Logan (2017)</div>
+        <div>Hugh Jackman</div>
+        <img src="faux-lien-vers-l-affiche-40.jpg" alt="Affiche Logan">
+    </div>
+    <!-- Film 41 -->
+    <div class="movie">
+        <div class="movie-title">The Revenant (2015)</div>
+        <div>Leonardo DiCaprio</div>
+        <img src="faux-lien-vers-l-affiche-41.jpg" alt="Affiche The Revenant">
+    </div>
+    <!-- Film 42 -->
+    <div class="movie">
+        <div class="movie-title">Bohemian Rhapsody (2018)</div>
+        <div>Rami Malek</div>
+        <img src="faux-lien-vers-l-affiche-42.jpg" alt="Affiche Bohemian Rhapsody">
+    </div>
+    <!-- Film 43 -->
+    <div class="movie">
+        <div class="movie-title">Whiplash (2014)</div>
+        <div>Miles Teller</div>
+        <img src="faux-lien-vers-l-affiche-43.jpg" alt="Affiche Whiplash">
+    </div>
+    <!-- Film 44 -->
+    <div class="movie">
+        <div class="movie-title">La Forme de l'eau (2017)</div>
+        <div>Sally Hawkins</div>
+        <img src="faux-lien-vers-l-affiche-44.jpg" alt="Affiche La Forme de l'eau">
+    </div>
+	<!-- MEN IN  BLACK  -->
+	<div class="movie">
+        <div class="movie-title">Men in Black (1997)</div>
+        <div>Will Smith</div>
+        <img src="faux-lien-vers-l-affiche-men-in-black.jpg" alt="Affiche Men in Black">
+    </div>
+    <!-- Film 45 -->
+    <div class="movie">
+        <div class="movie-title">Hunger Games (2012)</div>
+        <div>Jennifer Lawrence</div>
+        <img src="faux-lien-vers-l-affiche-45.jpg" alt="Affiche Hunger Games">
+    </div>
+    <!-- Film 46 -->
+    <div class="movie">
+        <div class="movie-title">Joker (2019)</div>
+        <div>Joaquin Phoenix</div>
+        <img src="faux-lien-vers-l-affiche-46.jpg" alt="Affiche Joker">
+    </div>
+    <!-- Film 47 -->
+    <div class="movie">
+        <div class="movie-title">La Vie est belle (1997)</div>
+        <div>Roberto Benigni</div>
+        <img src="faux-lien-vers-l-affiche-47.jpg" alt="Affiche La Vie est belle">
+    </div>
+    <!-- Film 48 -->
+    <div class="movie">
+        <div class="movie-title">Mad Max: Fury Road (2015)</div>
+        <div>Tom Hardy</div>
+        <img src="faux-lien-vers-l-affiche-48.jpg" alt="Affiche Mad Max: Fury Road">
+    </div>
+    <!-- Film 49 -->
+    <div class="movie">
+        <div class="movie-title">Moonlight (2016)</div>
+        <div>Mahershala Ali</div>
+        <img src="faux-lien-vers-l-affiche-49.jpg" alt="Affiche Moonlight">
+    </div>
+    <!-- Film 50 -->
+    <div class="movie">
+        <div class="movie-title">La Liste de Schindler (1993)</div>
+        <div>Liam Neeson</div>
+        <img src="faux-lien-vers-l-affiche-50.jpg" alt="Affiche La Liste de Schindler">
+    </div>
+    <!-- Film 51 -->
+    <div class="movie">
+        <div class="movie-title">Parasite (2019)</div>
+        <div>Song Kang-ho</div>
+        <img src="faux-lien-vers-l-affiche-51.jpg" alt="Affiche Parasite">
+    </div>
+    <!-- Film 52 -->
+    <div class="movie">
+        <div class="movie-title">Les Misérables (2019)</div>
+        <div>Damien Bonnard</div>
+        <img src="faux-lien-vers-l-affiche-52.jpg" alt="Affiche Les Misérables">
+    </div>
+    <!-- Film 53 -->
+    <div class="movie">
+        <div class="movie-title">Birdman (2014)</div>
+        <div>Michael Keaton</div>
+        <img src="faux-lien-vers-l-affiche-53.jpg" alt="Affiche Birdman">
+    </div>
+    <!-- Film 54 -->
+    <div class="movie">
+        <div class="movie-title">Drive (2011)</div>
+        <div>Ryan Gosling</div>
+        <img src="faux-lien-vers-l-affiche-54.jpg" alt="Affiche Drive">
+    </div>
+    <!-- Film 55 -->
+    <div class="movie">
+        <div class="movie-title">Her (2013)</div>
+        <div>Joaquin Phoenix</div>
+        <img src="faux-lien-vers-l-affiche-55.jpg" alt="Affiche Her">
+    </div>
+    <!-- Film 56 -->
+    <div class="movie">
+        <div class="movie-title">The Grand Budapest Hotel (2014)</div>
+        <div>Ralph Fiennes</div>
+        <img src="faux-lien-vers-l-affiche-56.jpg" alt="Affiche The Grand Budapest Hotel">
+    </div>
+    <!-- Film 57 -->
+    <div class="movie">
+        <div class="movie-title">12 Years a Slave (2013)</div>
+        <div>Chiwetel Ejiofor</div>
+        <img src="faux-lien-vers-l-affiche-57.jpg" alt="Affiche 12 Years a Slave">
+    </div>
+    <!-- Film 58 -->
+    <div class="movie">
+        <div class="movie-title">Room (2015)</div>
+        <div>Brie Larson</div>
+        <img src="faux-lien-vers-l-affiche-58.jpg" alt="Affiche Room">
+    </div>
+    <!-- Film 59 -->
+    <div class="movie">
+        <div class="movie-title">Dunkerque (2017)</div>
+        <div>Fionn Whitehead</div>
+        <img src="faux-lien-vers-l-affiche-59.jpg" alt="Affiche Dunkerque">
+    </div>
+    <!-- Film 60 -->
+    <div class="movie">
+        <div class="movie-title">Le Labyrinthe de Pan (2006)</div>
+        <div>Ivana Baquero</div>
+        <img src="faux-lien-vers-l-affiche-60.jpg" alt="Affiche Le Labyrinthe de Pan">
+    </div>
+</div>
+
+</body>
+</html>
